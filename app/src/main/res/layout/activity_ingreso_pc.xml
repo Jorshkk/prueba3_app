@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IngresoPc">
+
+    <TextView
+        android:onClick="menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@drawable/app_back"
+        android:drawableTint="@color/btn_principal"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/app_ingreso_pc"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:hint="@string/app_ingreso_id"
+        android:id="@+id/ingreso_edt_id"
+        android:inputType="number"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="" />
+
+    <EditText
+        android:autofillHints=""
+        android:hint="@string/app_marca"
+        android:inputType="text"
+        android:id="@+id/ingreso_edt_marca"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_id" />
+
+    <EditText
+        android:autofillHints=""
+        android:hint="@string/app_model"
+        android:inputType="text"
+        android:id="@+id/ingreso_edt_modelo"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_marca" />
+
+    <EditText
+        android:autofillHints=""
+        android:hint="@string/app_ram"
+        android:inputType="number"
+        android:id="@+id/ingreso_edt_ram"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_modelo" />
+
+    <EditText
+        android:autofillHints=""
+        android:hint="@string/app_so"
+        android:inputType="text"
+        android:id="@+id/ingreso_edt_so"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_ram" />
+
+    <EditText
+        android:autofillHints=""
+        android:hint="@string/app_rut"
+        android:inputType="number"
+        android:id="@+id/ingreso_edt_rut"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_so" />
+
+    <EditText
+        android:autofillHints=""
+        android:hint="@string/app_requeriment"
+        android:inputType="text"
+        android:id="@+id/ingreso_edt_requerimiento"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_rut" />
+
+    <TextView
+        android:autofillHints=""
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:text="Si ya ingresaste tu Pc revisalo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_requerimiento" />
+
+    <TextView
+        android:textColor="@color/btn_principal"
+        android:onClick="home"
+        android:autofillHints=""
+        android:id="@+id/ingreso_txt_aqui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Aqui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_requerimiento" />
+
+    <Button
+        android:onClick="ingresarPc"
+        android:text="Ingresar"
+        android:id="@+id/ingreso_btn"
+        style="@style/AppTheme.Btn_principal"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

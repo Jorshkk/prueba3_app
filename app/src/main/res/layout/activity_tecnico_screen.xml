@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TecnicoScreen">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@drawable/app_back"
+        android:drawableTint="@color/btn_principal"
+        android:onClick="goToHome"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/app_tecnico"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ingreso_edt_id"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:hint="@string/app_ingreso_id"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/ingreso_edt_marca"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:hint="@string/app_marca"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_id" />
+
+    <TextView
+        android:id="@+id/ingreso_edt_modelo"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:hint="@string/app_model"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_marca" />
+
+    <TextView
+        android:id="@+id/ingreso_edt_ram"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:hint="@string/app_ram"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_modelo" />
+
+    <TextView
+        android:id="@+id/ingreso_edt_so"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:hint="@string/app_so"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_ram" />
+
+    <TextView
+        android:id="@+id/ingreso_edt_rut"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:hint="@string/app_rut"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_so" />
+
+    <TextView
+        android:id="@+id/ingreso_edt_requerimiento"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:hint="@string/app_requeriment"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_rut" />
+
+    <EditText
+        android:id="@+id/edt_tec_estado"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="20dp"
+        android:hint="@string/app_estado_pc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_edt_requerimiento" />
+
+    <EditText
+        android:id="@+id/edt_tec_comentario"
+        style="@style/AppTheme.Edt"
+        android:layout_marginTop="24dp"
+        android:hint="@string/app_comentarios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tec_estado" />
+
+    <TextView
+        android:id="@+id/txt_actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="actualizarEquipo"
+        android:textColor="@color/btn_principal"
+        app:layout_constraintBottom_toTopOf="@+id/ingreso_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tec_comentario" />
+
+    <Button
+        android:id="@+id/ingreso_btn"
+        style="@style/AppTheme.Btn_principal"
+        android:onClick="modificaEstado"
+        android:text="Ingresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tec_comentario" />
+</androidx.constraintlayout.widget.ConstraintLayout>

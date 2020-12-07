@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Prueba2</string>
+    <string name="app_ingreso_pc">Ingreso PC</string>
+    <string name="app_ingreso_id">Ingrese el ID</string>
+    <string name="app_marca">Marca</string>
+    <string name="app_model">Modelo</string>
+    <string name="app_ram">RAM</string>
+    <string name="app_so">Tipo SO</string>
+    <string name="app_rut">Rut</string>
+    <string name="app_requeriment">Requerimiento</string>
+    <string name="app_title_home">Clinica del PC</string>
+    <string name="app_ingresa_el_id_de_tu_pc">Ingresa el ID de tu PC</string>
+    <string name="app_comentarios">Comentarios</string>
+    <string name="app_aceptar">Aceptar</string>
+    <string name="app_ingrese_su_usuario">Ingrese su usuario</string>
+    <string name="app_ingrese_contrase_a">Ingrese contraseña</string>
+    <string name="app_eliminar">Eliminar</string>
+    <string name="app_ingresa_el_id_del_pc">ingresa el id del PC</string>
+    <string name="app_estado_pc">Estado PC</string>
+    <string name="app_entrega">Entrega</string>
+    <string name="app_tecnico">Tecnico</string>
+    <string name="app_ingreso_eliminar">Ingreso Eliminar</string>
+    <string name="app_estado">Estado</string>
+
+    //Spiner
+    <string-array name="estadoEntrega">
+        <item>Entregado</item>
+    </string-array>
+</resources>

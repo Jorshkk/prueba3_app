@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyLogin">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/app_ingreso_eliminar"
+        android:textColor="@color/btn_principal"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:drawableTint="@color/btn_principal"
+        android:drawableStart="@drawable/app_cuenta"
+        android:drawablePadding="10dp"
+        style="@style/AppTheme.Edt"
+        android:inputType="text"
+        android:id="@+id/login_edt_user"
+        android:layout_width="287dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="80dp"
+        android:hint="@string/app_ingrese_su_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="" />
+
+    <EditText
+        android:drawableTint="@color/btn_principal"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/app_key"
+        style="@style/AppTheme.Edt"
+        android:inputType="textPassword"
+        android:id="@+id/login_edt_password"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="52dp"
+        android:hint="@string/app_ingrese_contrase_a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_edt_user"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/main_btn_login"
+        style="@style/AppTheme.Btn_principal"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:onClick="validarLogin"
+        android:text="Ingresar"
+        android:textColor="@color/btn_principal"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_edt_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>
